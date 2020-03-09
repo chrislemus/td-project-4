@@ -1,14 +1,7 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-
-    .container {
-      max-width: 1400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@include mq($lg) {
     
     .centered {
       display: block;
@@ -16,16 +9,6 @@
       margin-right: auto;
     }
     
-    .row {
-      flex-direction: row;
-    }
-    
-    [class^=col] {
-      display: flex;
-      justify-content: center;
-      margin-top: 0;
-      align-items: center;
-    }
     
     [class^=col] + [class^=col] {
       margin-left: 10px;
@@ -103,3 +86,27 @@
     }
     
     }
+
+//=================================
+// commands below have already been implemented using mixin
+// copies are saved for reference incase needed  later
+// =================================
+
+
+        // .row {
+    //   flex-direction: row;
+    // }
+    
+    // [class^=col] {
+    //   display: flex;
+    //   justify-content: center;
+    //   margin-top: 0;
+    //   align-items: center;
+    // }
+
+        // .container {
+    //   max-width: 1400px;
+    //   display: block;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
