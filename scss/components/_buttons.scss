@@ -11,6 +11,9 @@
     text-transform: uppercase;
     border-radius: 5px;
     transition: all .3s ease-in ;
+    @include mq($lg) {
+      padding: 10px 30px;
+    }
   }
   
   .default {

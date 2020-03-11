@@ -407,6 +407,11 @@ a {
   border-radius: 5px;
   transition: all 0.3s ease-in;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -682,10 +687,6 @@ a {
 
   .nav-link {
     flex-basis: 100px;
-  }
-
-  .btn {
-    padding: 10px 30px;
   }
 
   .btn + .btn {
